@@ -9,8 +9,8 @@ base.entry = {
 base.output = {
   path: config.build.assetsRoot,
   publicPath: config.build.assetsPublicPath,
-  filename: 'react-iscroll.js',
-  library: 'ReactIscroll',
+  filename: 'react-iscroll-lite.js',
+  library: 'ReactIscrollLite',
   libraryTarget: 'umd'
 }
 
