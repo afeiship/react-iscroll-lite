@@ -22,7 +22,6 @@ class IscollLite extends React.Component{
 
   componentDidMount(){
     this._iscroll =new IScroll(`.${this.props.cssClass}`, this.props.iscrollOptions);
-    console.log(this);
   }
 
   invoke(inName){
