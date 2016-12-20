@@ -22,6 +22,11 @@ class IscollLite extends React.Component{
 
   componentDidMount(){
     this._iscroll =new IScroll(`.${this.props.cssClass}`, this.props.iscrollOptions);
+    this.preventDocDefault();
+  }
+
+  preventDocDefault(){
+    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
   }
 
   invoke(inName){

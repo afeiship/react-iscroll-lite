@@ -29,6 +29,7 @@
 	color:#FFF;
 }
 
+
 ul,li{
 	list-style: none;
 	padding:0;
@@ -36,11 +37,11 @@ ul,li{
 }
 
 .wrapper {
+	display: none;
 	top: 45px;
 	bottom: 48px;
 	background: #ccc;
 }
-
 .wrapper-scroller {
 	li {
 		padding: 0 10px;
@@ -50,5 +51,24 @@ ul,li{
 		border-top: 1px solid #fff;
 		background-color: #fafafa;
 		font-size: 14px;
+	}
+}
+
+
+.wrapper2{
+	top: 45px;
+	bottom: 48px;
+	left:0;
+	right:0;
+}
+.wrapper2-scroller{
+	height:100%;
+	width:1000px;
+	ul{height:100%;}
+	li{
+		height: 100%;;
+		background: #eee;
+		border-right: 1px solid #f00;
+		float: left;
 	}
 }
