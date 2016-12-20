@@ -17,7 +17,8 @@ class IscollLite extends React.Component{
 
   static defaultProps = {
     cssClass:'wrapper',
-    iscrollOptions:{}
+    iscrollOptions:{},
+    scrollerBound:{}
   };
 
   componentDidMount(){
