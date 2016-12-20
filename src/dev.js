@@ -1,10 +1,10 @@
-import {IscrollLite,IscrollLiteCtrl} from './main';
+import IscrollLite from './main';
 import './dev.scss';
 
 
 class App extends React.Component{
   componentDidMount(){
-    this._instnace=IscrollLiteCtrl.getInstance('test');
+    this._instnace=this.refs.test;
   }
 
   _click(){
@@ -17,7 +17,7 @@ class App extends React.Component{
         <header id="header" onClick={this._click.bind(this)}>
           Header
         </header>
-        <IscrollLite cssClass="wrapper" delegateHandle="test" iscrollOptions={{useTransition:true}}>
+        <IscrollLite cssClass="wrapper" ref="test">
           <ul>
       			<li>Pretty row 1</li>
       			<li>Pretty row 2</li>
